@@ -3,7 +3,7 @@
 
 // specify your email here
 
-$to = 'modauod@gmail.com';
+$to = 'joinmannyfitness@gmail.com';
 
 
 	// PLEASE DON'T EDIT ANY CODE AFTER THIS LINE!
@@ -13,7 +13,7 @@ $to = 'modauod@gmail.com';
     if (isset($_POST['company'])) { $company = $_POST['company']; }
     if (isset($_POST['website'])) { $website = $_POST['website']; }
     if (isset($_POST['message'])) { $message = $_POST['message']; }
-	
+
 	// Construct subject of the email
 	$subject = 'Message from ' . $name;
 
@@ -32,7 +32,7 @@ $to = 'modauod@gmail.com';
 
 	if ($mail_sent == true){ ?>
 <script language="javascript" type="text/javascript">
-		window.alert("Sent Successfuly.");
+		window.alert("Sent Successfully.");
 		</script>
 <?php } else { ?>
 <script language="javascript" type="text/javascript">
@@ -40,5 +40,5 @@ $to = 'modauod@gmail.com';
                 </script>
 <?php
 	} // End else
-    
+
 ?>
