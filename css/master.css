@@ -28,6 +28,19 @@ Version      : 1.1
 
 
 /*========================= 01. START GLOBAL =========================*/
+
+hr {
+  border: 0;
+  width: 75%;
+  color: #353535;
+  background-color: #353535;
+  height: 2px;
+  Margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@import "slicknav.min.css";
+
 * {
     outline: none !important;
     -webkit-box-sizing: border-box;
@@ -49,6 +62,7 @@ body {
 }
 
 .section-title {
+    background-color: #000000;
     padding-top: 100px;
     padding-bottom: 100px;
     overflow: hidden;
@@ -66,15 +80,16 @@ a:hover {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 700;
+    color: #ffffff !important;
     letter-spacing: 2px;
     background: none;
-    border: 2px solid #131313;
+    border: 2px solid #ffffff;
     padding: 10px 30px;
     min-width: 180px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -o-border-radius: 25px;
-    border-radius: 25px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
     -webkit-transition: all 0.2s ease 0s;
     -moz-transition: all 0.2s ease 0s;
     -o-transition: all 0.2s ease 0s;
@@ -82,34 +97,34 @@ a:hover {
 }
 
 .btn-border {
-    color: #131313 !important;
+    color: #ffffff !important;
 }
 
 .btn-border:hover {
-    background-color: #131313;
-    color: #fff !important;
+    background-color: #ffffff;
+    color: #000000 !important;
 }
 
 .carousel-indicators li {
-    border: 2px solid #0C0B0B !important;
+    border: 1px solid #F7F7F7 !important;
 }
 
 .carousel-indicators .active {
-    background-color: #0C0B0B;
+    background-color: #F7F7F7;
 }
 
 .carousel-indicators li,
 .carousel-indicators .active {
     border: none;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
 }
 /*========================= // END GLOBAL =========================*/
 
 
 /*========================= 02. START TYPOGRAPHY =========================*/
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-top: 0;
     color: #0C0B0B;
 }
@@ -117,7 +132,7 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
     font-size: 60px;
     font-weight: 300;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
 }
 
 h2 {
@@ -128,18 +143,19 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 1.5em;
     margin-bottom: 30px;
     text-transform: capitalize;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
 }
 
 h4 {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 600;
+    line-height: 1.5em;
     letter-spacing: 1px;
 }
 
@@ -154,7 +170,7 @@ h6 {
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppns', sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -176,12 +192,17 @@ p {
     transition: all 0.5s ease-in-out;
 }
 
+.slicknav_menu {
+    display: none;
+}
+
 .navbar .navbar-brand {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: 2px;
     color: #fff;
+    padding-top: 22px;
 }
 
 .navbar .navbar-toggle {
@@ -190,19 +211,21 @@ p {
 
 .navbar .navbar-nav > li {
     font-size: 14px;
-    padding-top: 5px;
 }
 
 .navbar .nav > li > a {
-    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
     letter-spacing: 1px;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
+
 
 .navbar .nav > li > a:hover,
 .navbar .nav > li > a:active,
@@ -217,6 +240,7 @@ p {
     margin-bottom: 100px;
     color: #fff;
     border-bottom: 1px solid #1b1b1b;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -230,7 +254,7 @@ header.intro {
 }
 
 header.intro:before {
-    background: url('../images/slider-bg.jpg') no-repeat fixed center center;
+    background: url('../images/mannyfitness-hero.png') no-repeat fixed center center;
     content: " ";
     position: absolute;
     top: 0;
@@ -255,7 +279,7 @@ header.intro h1 span {
 }
 
 header.intro p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 2px;
@@ -275,6 +299,61 @@ header.intro .btn:hover {
 header.intro .intro-content .btn:last-of-type {
     margin-right: 0;
 }
+
+/*TEST*/
+header.short {
+    background-color: #000000;
+    overflow: hidden;
+    z-index: 1;
+}
+
+header.short:before {
+    background-color: #000000;
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35%;
+    width: 100%;
+    z-index: -1;
+}
+
+header.short .intro-content {
+    padding-top: 20vh;
+    color: #F8F8F8;
+}
+
+header.short h1,
+header.short h1 span {
+    color: #F8F8F8;
+}
+
+header.short h1 span {
+    font-weight: 500;
+}
+
+header.short p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+header.short .btn {
+    margin: 25px 5px;
+    border-color: #fff;
+    color: #fff !important;
+}
+
+header.short .btn:hover {
+    background-color: #0C0B0B;
+    border-color: #0C0B0B;
+}
+
+header.short .short-content .btn:last-of-type {
+    margin-right: 0;
+}
+/*TEST*/
 
 /* PARTICLES-JS */
 #particles-js {
@@ -345,9 +424,9 @@ header.intro .intro-content .btn:last-of-type {
 }
 
 #folio-slider .item {
-    min-height: 350px; 
+    min-height: 350px;
     height: 100%;
-    width:100%; 
+    width:100%;
 }
 
 #folio-slider .carousel-inner {
@@ -391,11 +470,12 @@ header.intro .intro-content .btn:last-of-type {
 }
 
 .about .biography h3 {
-    color: #0C0B0B;
+    color: #ffffff;
+    padding-top: 20px;
 }
 
 .about .biography p {
-    color: #666;
+    color: #e0e0e0;
 }
 
 .about ul.social-icons li {
@@ -408,6 +488,7 @@ header.intro .intro-content .btn:last-of-type {
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    color: #d8d8d8;
 }
 /*========================= // END ABOUT =========================*/
 
@@ -453,9 +534,9 @@ header.intro .intro-content .btn:last-of-type {
 }
 
 .services .service:hover i {
-    background-color: #0C0B0B;
+    background-color: #ED2B2B;
     color: #f6f6f6;
-    transform: rotate(360deg)
+    border: 1px solid #ED2B2B;
 }
 
 
@@ -466,7 +547,7 @@ header.intro .intro-content .btn:last-of-type {
 
 .services .service p {
     font-size: 13px;
-    padding: 0;
+    padding: 15px;
     color: #0C0B0B;
 }
 /*========================= // END SERVICES =========================*/
@@ -536,7 +617,7 @@ header.intro .intro-content .btn:last-of-type {
     color: #fff;
     position: absolute;
     top: 0;
-    right: 0;    
+    right: 0;
 }
 
 .resume .skills .progress .progress-bar {
@@ -557,8 +638,12 @@ header.intro .intro-content .btn:last-of-type {
 
 /*========================= START PORTFOLIO =========================*/
 .portfolio {
-    background-color: #F7F7F7;
+    background-color: #000000;
     overflow: hidden;
+}
+
+.portfolio h2 {
+    color: #ffffff;
 }
 
 .portfolio .list-inline {
@@ -580,7 +665,7 @@ header.intro .intro-content .btn:last-of-type {
 
 .portfolio .list-inline > li:hover,
 .portfolio .list-inline > li.active {
-    color: #131313;
+    color: #ed2b2b;
     border-color: #131313;
 }
 
@@ -615,7 +700,7 @@ header.intro .intro-content .btn:last-of-type {
 }
 
 .portfolio .item .portfolio-caption h4 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: #fff;
@@ -636,12 +721,12 @@ header.intro .intro-content .btn:last-of-type {
 
 /*========================= START TESTIMONIALS =========================*/
 .testimonials {
-    background-color: rgba(0, 0, 0,0.9);
+    background-color: rgba(0, 0, 0,0.85);
     position: relative;
 }
 
 .testimonials:before {
-    background: url('../images/testimonials-bg.jpg') no-repeat fixed center center;
+    background: url('../images/manny-testimonial-bg2.jpg') no-repeat fixed center center;
     content: " ";
     position: absolute;
     top: 0;
@@ -678,6 +763,7 @@ header.intro .intro-content .btn:last-of-type {
 .testimonials .item blockquote:before {
     content: "\f347";
     font-family: ionicons;
+    color: #ed2b2b;
     font-size: 30px;
     margin-right: 10px;
 }
@@ -710,25 +796,40 @@ header.intro .intro-content .btn:last-of-type {
 
 
 /*========================= // START CONTACT =========================*/
+.contact {
+    background-color: #0C0B0B;
+    color: #ffffff;
+}
+
+.contact h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.contact h2 {
+    color: #ffffff;
+}
+
 .contact .info .contact-info {
     margin-bottom: 20px;
 }
 
 .contact .info .contact-info i {
     font-size: 30px;
-    color: #434343;
+    color: #ed2b2b;
     display: inline-block;
     margin-bottom: 5px;
 }
 
 .contact .info .contact-info h4 {
     margin-bottom: 5px;
-    color: #434343;
+    color: #ffffff;
 }
 
 .contact .info .contact-info p {
     font-size: 14px;
-    color: #555555;
+    color: #ffffff;
     margin: 0;
 }
 
@@ -739,7 +840,7 @@ header.intro .intro-content .btn:last-of-type {
 
 .contact form label {
     display: block;
-    color: #444;
+    color: #ffffff;
     letter-spacing: 2px;
     margin: 0 !important;
 }
@@ -827,8 +928,22 @@ header.intro:before,
     background-size: cover;
 }
 
+{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .about .biography p {
     margin-bottom: 25px;
+}
+
+.about .text p {
+    margin-bottom: 50px;
+    width: 60%;
 }
 
 .portfolio .item img,

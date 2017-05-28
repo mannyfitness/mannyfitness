@@ -72,6 +72,61 @@ Version      : 1.0
 
 /* ======== START SMALL SCREENS ======== */
 @media (min-width:768px) and (max-width:991px) {
+  .slicknav_menu {
+      display: block;
+      background: transparent;
+      padding: 5px;
+      position: absolute;
+      top: 5px;
+      right: 0;
+      z-index: 10;
+      font-size: 25px
+  }
+  .slicknav_menu .megamenu {
+      display: none
+  }
+  .slicknav_menu .slicknav_icon-bar {
+      background-color: #463f3a
+  }
+  .slicknav_menu .slicknav_nav {
+      clear: both;
+      color: #463f3a;
+      margin: 0;
+      font-size: 14px;
+      width: 400px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px
+  }
+  .slicknav_menu .slicknav_nav a {
+      -webkit-transition: all 320ms ease;
+      -moz-transition: all 320ms ease;
+      -ms-transition: all 320ms ease;
+      -o-transition: all 320ms ease;
+      transition: all 320ms ease;
+      text-transform: uppercase
+  }
+  .slicknav_menu .slicknav_nav a:hover,
+  .slicknav_menu .slicknav_nav a:active,
+  .slicknav_menu .slicknav_nav a:focus {
+      background: transparent;
+      color: coral
+  }
+  .slicknav_menu .slicknav_nav .slicknav_arrow {
+      display: none
+  }
+  .slicknav_menu .slicknav_nav .slicknav_row:hover {
+      background: transparent;
+      color: #f5f6f1
+  }
+  .slicknav_menu .slicknav_btn.slicknav_collapsed,
+  .slicknav_menu .slicknav_btn.slicknav_open {
+      background: transparent;
+      border: 1px solid #463f3a;
+      border-radius: 0;
+      padding: 15px
+  }
+
+
     .navbar-right {
         margin-right: 0;
     }
@@ -116,4 +171,3 @@ Version      : 1.0
     }
 }
 /* ======== // END LARGE SCREENS ======== */
-
