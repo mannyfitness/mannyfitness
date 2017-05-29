@@ -254,9 +254,7 @@ header.intro {
 }
 
 header.intro:before {
-    background: url('../images/mannyfitness-hero.png') no-repeat fixed center;
-    content: " ";
-    position: absolute;
+    background: url('../images/mannyfitness-hero.png');
     top: 0;
     left: 0;
     height: 100%;
