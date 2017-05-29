@@ -255,6 +255,7 @@ header.intro {
 
 header.intro:before {
     background: url('../images/mannyfitness-hero.png');
+    background-color: #000000;
     content: " ";
     position: absolute;
     top: 0;
