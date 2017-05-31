@@ -397,7 +397,6 @@ header.short .short-content .btn:last-of-type {
 #folio-slider .carousel-control {
     background: none;
     width: 0;
-    overflow: hidden;
 }
 
 #folio-slider .carousel-control:hover span {
@@ -469,7 +468,6 @@ header.short .short-content .btn:last-of-type {
     margin-top: 20px;
     position: relative;
     bottom: 0;
-    overflow: hidden;
 }
 
 .carousel-inner>.item>a>img,
