@@ -52,7 +52,18 @@ jQuery(function ($) {
         if ($(window).scrollTop() > 50) {
             nav.addClass('navbar-fixed-top');
         } else {
+            if (!$('#main-navbar').hasClass('in')) {
+              nav.removeClass('navbar-fixed-top');
+            }
+        }
+    });
+
+    $('.navbar-toggle').on('click', function () {
+        var nav = $('.navbar');
+        if ($('#main-navbar').hasClass('in') && $(window).scrollTop() <= 50) {
             nav.removeClass('navbar-fixed-top');
+        } else {
+            nav.addClass('navbar-fixed-top');
         }
     });
     
