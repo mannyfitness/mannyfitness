@@ -434,6 +434,10 @@ header.short .short-content .btn:last-of-type {
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #folio-slider:hover .carousel-control span {
