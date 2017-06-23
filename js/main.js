@@ -16,6 +16,7 @@
 5.  MAGNIFIC POPUP
 6.  WOW JS
 7.  REPEAT SLIDER ANIMATION
+8.  SLIDER TOUCH CONTROL
 ----------------------------------------------------------
 */
 
@@ -140,5 +141,13 @@ jQuery(function ($) {
         doAnimations($animatingElems);
     });  
     
+    /*   8. SLIDER TOUCH CONTROL
+    ---------------------------------------------- */
+    $("#folio-slider").swiperight(function() {
+        $("#folio-slider").carousel('prev');
+    });
+    $("#folio-slider").swipeleft(function() {
+        $("#folio-slider").carousel('next');
+    });
     
 });
