@@ -410,12 +410,12 @@ header.short .short-content .btn:last-of-type {
     width: 0;
 }
 
-#folio-slider .carousel-control:hover span {
+#folio-slider .carousel-control:hover span:first-of-type {
     border-color: #fff;
     color: #fff;
 }
 
-#folio-slider .carousel-control span {
+#folio-slider .carousel-control span:first-of-type {
     height: 50px;
     width: 50px;
     line-height: 46px;
@@ -440,7 +440,7 @@ header.short .short-content .btn:last-of-type {
     box-sizing: border-box;
 }
 
-#folio-slider:hover .carousel-control span {
+#folio-slider:hover .carousel-control span:first-of-type {
     display: block;
 }
 
