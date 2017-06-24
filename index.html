@@ -477,7 +477,7 @@
                     <!-- START FORM AREA -->
                     <div class="col-md-8 col-sm-6">
                         <div class="contact-form">
-                            <form role="form" id="contact_form" class="contact-form" method="post" onSubmit="return false">
+                            <form role="form" id="contact_form" class="contact-form" method="post" action="http://formspree.io/joinmannyfitness@gmail.com">
                                 <!-- START NAME LABEL -->
                                 <label>
                                     <input required type="text" class="form-control" name="name" id="name" placeholder="YOUR NAME">
@@ -485,7 +485,7 @@
                                 <!-- // END NAME LABEL -->
                                 <!-- START EMAIL LABEL -->
                                 <label>
-                                    <input required type="text" class="form-control" name="email" id="email" placeholder="YOUR EMAIL ADDRESS">
+                                    <input required type="email" pattern="^([A-Za-z0-9_\-\.])+@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$" title="Please provide a valid email address." class="form-control" name="email" id="email" placeholder="YOUR EMAIL ADDRESS">
                                 </label>
                                 <!-- // END EMAIL LABEL -->
                                 <!-- START MESSAGE LABEL -->
@@ -495,7 +495,7 @@
                                 <!-- // END MESSAGE LABEL -->
                                 <!-- START SEND BUTTON -->
                                 <div class="wow fadeInUp" data-wow-delay="1s">
-                                    <button type="submit" value="submit" class="btn scroll btn-border text-uppercase" id="btn_submit" onClick="proceed();">SEND</button>
+                                    <button type="submit" value="submit" class="btn scroll btn-border text-uppercase" id="btn_submit">SEND</button>
                                 </div>
                                 <!-- // END SEND BUTTON -->
                             </form>
@@ -559,8 +559,6 @@
         <script src="js/jquery.magnific-popup.min.js"></script>
         <!-- WOW -->
         <script src="js/wow.min.js"></script>
-        <!-- FORM -->
-        <script src="js/form.js"></script>
         <!-- MAIN JS FILE -->
         <script src="js/main.js"></script>
         <!-- ================= // END SCRIPTS AREA ================= -->
