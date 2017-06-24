@@ -143,6 +143,7 @@ jQuery(function ($) {
     
     /*   8. SLIDER TOUCH CONTROL
     ---------------------------------------------- */
+    $.mobile.loading().hide();
     $("#folio-slider").swiperight(function() {
         $("#folio-slider").carousel('prev');
     });
