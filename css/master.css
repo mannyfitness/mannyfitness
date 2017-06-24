@@ -737,6 +737,43 @@ header.short .short-content .btn:last-of-type {
 .portfolio .item:hover .portfolio-caption {
     opacity: 1;
 }
+
+@media all and (min-width: 900px) {
+  .mfp-title {
+    padding-top: 40px;
+  }
+  
+  .mfp-content {
+    background-color: black;
+    border: 1px solid white;
+    padding: 5px;
+    width: 900px;
+  }
+
+  .mfp-figure .mfp-close {
+    right: 0px;
+    text-align: right;
+    width: auto;
+  }
+  
+  .mfp-figure::after{
+    background-color: black;
+  }
+
+  .mfp-content .mfp-figure figure .mfp-img {
+    float: left;
+    display: block;
+    padding: 40px 40px 40px 40px;
+    width: 500px;
+  }
+
+  .mfp-bottom-bar {
+    margin-left: 510px;
+    position: relative;
+    width: auto;
+    margin-top: auto;
+  }
+}
 /*========================= // END PORTFOLIO =========================*/
 
 
