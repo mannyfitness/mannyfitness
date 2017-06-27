@@ -24,7 +24,7 @@
 /*global $, jQuery, alert*/
 jQuery(function ($) {
     'use strict';
-      
+
     /*   1.  PRE LOADING
     ---------------------------------------------- */
     $(window).on('load', function () {
@@ -33,8 +33,8 @@ jQuery(function ($) {
             $('body').css("overflow", "auto");
         });
     });
-    
-    
+
+
     /*   2.  SMOTH SCROLL
     ---------------------------------------------- */
     $('.scroll').on('click', function (e) {
@@ -44,8 +44,8 @@ jQuery(function ($) {
         }, 1000);
         e.preventDefault();
     });
-    
-    
+
+
     /*   3.  FIXED NAVBAR
     ---------------------------------------------- */
     $(window).on('scroll', function () {
@@ -67,8 +67,8 @@ jQuery(function ($) {
             nav.addClass('navbar-fixed-top');
         }
     });
-    
-    
+
+
     /*   4.  PORTFOLIO FILTER
     ---------------------------------------------- */
     $('.filter-button').on('click', function () {
@@ -81,13 +81,13 @@ jQuery(function ($) {
             filter.filter('.' + value).show('3000');
         }
     });
-    
+
     $("ul.folio li").on('click', function () {
         $("ul.folio li").removeClass('active');
         $(this).addClass('active');
     });
-    
-    
+
+
     /*   5. MAGNIFIC POPUP
     ---------------------------------------------- */
     $('.image-popup-vertical-fit').magnificPopup({
@@ -98,20 +98,20 @@ jQuery(function ($) {
             verticalFit: true
         }
     });
-    
-    
+
+
     /*   6. WOW JS
     ---------------------------------------------- */
     new WOW().init();
-    
+
 
     /*   7. REPEAT SLIDER ANIMATION
     ---------------------------------------------- */
-    //Function to animate slider captions 
+    //Function to animate slider captions
     function doAnimations( elems ) {
         //Cache the animationend event in a variable
         var animEndEv = 'webkitAnimationEnd animationend';
-        
+
         elems.each(function () {
             var $this = $(this),
                 $animationType = $this.data('animation');
@@ -120,27 +120,27 @@ jQuery(function ($) {
             });
         });
     }
-    
-    //Variables on page load 
+
+    //Variables on page load
     var $myCarousel = $('#folio-slider'),
         $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
-        
-    //Initialize carousel 
+
+    //Initialize carousel
     $myCarousel.carousel();
-    
-    //Animate captions in first slide on page load 
+
+    //Animate captions in first slide on page load
     doAnimations($firstAnimatingElems);
-    
-    //Pause carousel  
+
+    //Pause carousel
     $myCarousel.carousel('pause');
-    
-    
-    //Other slides to be animated on carousel slide event 
+
+
+    //Other slides to be animated on carousel slide event
     $myCarousel.on('slide.bs.carousel', function (e) {
         var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
         doAnimations($animatingElems);
-    });  
-    
+    });
+
     /*   8. SLIDER TOUCH CONTROL
     ---------------------------------------------- */
     $.mobile.loading().hide();
@@ -150,5 +150,5 @@ jQuery(function ($) {
     $("#folio-slider").swipeleft(function() {
         $("#folio-slider").carousel('next');
     });
-    
+
 });
